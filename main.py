@@ -19,7 +19,7 @@ def main():
         text_lower = text.lower()
         counter = create_dict()
         for character in text_lower:
-            if character in  "abcdefghijklmnopqrstuvwxyz1234567890 ',()\n.-_:;[]¨{}#$%&//=?¿|*!":
+            if character in counter:
                 counter[character] += 1
             
         return counter
